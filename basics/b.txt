@@ -1,0 +1,22 @@
+def calc(): 
+	print ("\n Enter two numbers: ")
+	a = int(input())
+	b = int(input())
+	operator = char(input(print ("\n Enter operator:(+,-,/,*,%,**):")))
+
+	if(operator == "+"): 	
+		result = a+b
+	elif(operator == "-"):
+		result = a-b
+	elif(operator == "/"):
+        result = a/b
+    elif(operator == "%"):
+        result = a%b
+    elif(operator == "**"):
+        result = a**b   
+    elif(operator == "*"):
+        result = a*b
+    else:
+        print("Incorrect operator")
+        calc()
+    print("Result is: ", result)
